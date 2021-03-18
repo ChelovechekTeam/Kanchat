@@ -569,17 +569,28 @@ function getData() {
 	let arr = Data.split(' ');
 	var index, len;
 	let a = [];
+	var kal, kaka;
 for (index = 0, len = arr.length; index < len; ++index) {
+	if (arr[index][arr[index].length-1] == ',' ) {
+		kaka = 1;
+		arr[index] = arr[index].substring(0, arr[index].length - 1);
+	} else{
+		kaka = 0;
+	}
 		let ata = arr[index].substring(0, arr[index].length - 1);
 		if (sayings.has(ata)){
-			a += sayings.get(ata) + ' ';
+			a += sayings.get(ata);
 		} else { 
 				if(sayings.has(arr[index])){
-					a += (sayings.get(arr[index])) + ' ';
+					a += (sayings.get(arr[index]));
 				}else {
-					a += (arr[index]) + ' ';
+					a += (arr[index]);
 				}
 			}
+			if (kaka == 1) {
+				a += (',');
+			}
+			a += (' ');
 	}
 	document.getElementById('ans').innerHTML = a;
 		//   izmeneno!!!!!
