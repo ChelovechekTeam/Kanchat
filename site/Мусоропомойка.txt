@@ -1,0 +1,11 @@
+<body>
+
+<script>
+window.onload = function () {
+  var text = "text";
+  document.body.innerHTML += '<div id="' + text + '">это div c id="' + text + '"</div>';
+}
+</script>
+<form>
+							<input type=text name=textField size=45> 
+						</form>	
