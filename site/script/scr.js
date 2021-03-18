@@ -563,20 +563,26 @@ sayings.set("Элемент", "Элемента");
 sayings.set("Юбіляр", "Юбіляра");
 sayings.set("Юзер", "Юзера");
 
+function lalka(){
+	document.getElementById('lol').innerHTML='<input type="button" id="image" class="btn" value="" onClick="getData()">';
+}
+
 var ios=0;
 var image=document.getElementById("image");
 // Добавте свои картинки через запятую
 var imgs=new Array('/img/arrow.jpg','/img/arrow1.jpg');
 function getData() {
-	if (ios == 0){
-	alert('a');
+	//if (ios == 0){
+	//alert('a');
 	ios = 1;
-	document.getElementById('lol').innerHTML='<input type="button" id="image" class="btn0" value="" onClick="getData()">'
-} else{
+	document.getElementById('lol').innerHTML='<input type="button" id="image" class="btn0" value="" onClick="getData()">';
+	setTimeout(lalka,220);
+	
+/*} else{
 	ios = 0;
 	alert('b')
 	document.getElementById('lol').innerHTML='<input type="button" id="image" class="btn" value="" onClick="getData()">'
-}
+}*/
 	let Data = document.forms[0].textField.value;
 	let arr = Data.split(' ');
 	var index, len;
