@@ -573,8 +573,12 @@ for (index = 0, len = arr.length; index < len; ++index) {
 		let ata = arr[index].substring(0, arr[index].length - 1);
 		if (sayings.has(ata)){
 			a += sayings.get(ata) + ' ';
-		} else {
-			a += (arr[index]) + ' ';
+		} else { 
+				if(sayings.has(arr[index])){
+					a += (sayings.get(arr[index])) + ' ';
+				}else {
+					a += (arr[index]) + ' ';
+				}
 			}
 	}
 	document.getElementById('ans').innerHTML = a;
