@@ -112,9 +112,10 @@ html, body{
 		min-width:100%;
 		min-height:40px;
 		height: 100%;
-
+		outline: none;
 	}
 	.output{
+		padding-left: 1%;
 		width: 47%;
 		display: block;
 		background-color: white;
