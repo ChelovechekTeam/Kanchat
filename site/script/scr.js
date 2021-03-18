@@ -563,8 +563,22 @@ sayings.set("Элемент", "Элемента");
 sayings.set("Юбіляр", "Юбіляра");
 sayings.set("Юзер", "Юзера");
 
-
+var ios=0;
+var image=document.getElementById("image");
+// Добавте свои картинки через запятую
+var imgs=new Array('/img/arrow.jpg','/img/arrow1.jpg');
 function getData() {
+	if (ios == 0){
+	alert('a');
+	ios = 1;
+	document.getElementsByClassName('btn')[1].style= 'background-image: url(../img/arrow.jpg);'
+	//document.getElementById('image').innerHTML=imgs[ios];
+} else{
+	ios = 0;
+	document.getElementsByClassName('btn')[1].style= 'background-image: url(../img/arrow1.jpg);'
+	//document.getElementById('image').innerHTML=imgs[ios];
+	alert('b')
+}
 	let Data = document.forms[0].textField.value;
 	let arr = Data.split(' ');
 	var index, len;
