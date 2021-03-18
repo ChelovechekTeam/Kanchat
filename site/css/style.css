@@ -102,8 +102,9 @@ html, body{
 		background-color: white;
 	}
 	.btn{
-		background-image: url(../img/background.jpg);
-		background-size: contain;
+		background-color: white;
+		background-image: url(../img/arrow.jpg);
+		background-size: cover;
 		background-repeat: no-repeat;
 		background-position:center;
 		border: none;
