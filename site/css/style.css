@@ -114,6 +114,9 @@ html, body{
 		height: 100%;
 		outline: none;
 	}
+	.btn:hover{
+		background-color: red;
+	}
 	.output{
 		padding-left: 1%;
 		width: 47%;
