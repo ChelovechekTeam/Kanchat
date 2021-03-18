@@ -6,9 +6,9 @@
 }
 .font_textarea{
 	font-family: cursive;
-	color: grey;
+	color: black;
 }
 .font_textarea.active{
-	color: black;
+	color:  grey;
 }
 
