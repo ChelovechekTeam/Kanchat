@@ -116,6 +116,18 @@ html, body{
 		height: 100%;
 		outline: none;
 	}
+		.btn0{
+		background-color: white;
+		background-image: url(../img/arrow1.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position:center;
+		border: none;
+		min-width:100%;
+		min-height:40px;
+		height: 100%;
+		outline: none;
+	}
 	.btn:hover{
 		background-color: red;
 	}
