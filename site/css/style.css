@@ -18,7 +18,7 @@ html, body{
 
 .container{
 	width: 90%;
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(255,255,255,0.8);
 	margin: 0 auto;
 	
 }
@@ -42,8 +42,7 @@ html, body{
 }
  .Ptext{
  	text-align: center;
- 	font-size: 120px;
- 	align-items: center;
+ 	font-size: 120px;	
  }
 .navig{
 	position: relative;
@@ -61,7 +60,7 @@ html, body{
 		height: 100%;
 		width: 100%;
 		max-width: 400px;
-		background-image: url(../img/rofl_logo.jpg); 
+		background-image: url(../img/rofl_logo1.jpg); 
 	}
 .textarea{
 	width: 100%;
@@ -89,12 +88,61 @@ html, body{
 	padding-right: 1%;
 	padding-top: 60px;
 	width: 100%;
-	height: 100%;
-	min-height: 100vh;
+	display: inline-block;
+	height: 100vh;
 }
+.coming{
+	margin: 0;
+	width: 100%;
+	height: 60%;
+	background-color: rgba(255,255,255,0.0);
+	margin-top: 1%;
+	display: inline-block;
+}
+	/*coming*/
+	.coming_soon{
+		padding-left: auto;
+		padding-right: auto;
+		width:100%;
+		height: 80px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.coder{
+		height: 50%;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		space-between
+	}
+		/*coder*/
+		.firstcoder{
+			height: 100%;
+			width: 50%;
+		}
+			.firstcoder_text{
+				width: 40%;
+				float: right;
+				height: 100%;
+				background-color: grey;
+			}
+		.secondcoder{
+			width: 50%;
+			height: 100%;
+		}
+			.secondcoder_text{
+				width: 40%;
+				float: left;
+				height: 100%;
+				background-color: black;
+			}
+
 .blocks{ 
 	width: 100%;
 	min-height: 400px;
+	height: 100%;
+	max-height: 430px;
 	padding: 1% 1% 1% 1%;
 	background-color: rgba(255,255,255,1);
 	display: flex;
@@ -103,6 +151,10 @@ html, body{
 	align-items: center;
 }
 	/*blocks*/
+	.block_text{
+		width:100%;
+		height: 100vh;
+	}
 	.input{
 		max-height: 400px;
 		width: 47%;
