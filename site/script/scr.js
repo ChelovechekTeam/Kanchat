@@ -568,14 +568,15 @@ function getData() {
 	let Data = document.forms[0].textField.value;
 	let arr = Data.split(' ');
 var index, len;
+let a = [];
 for (index = 0, len = arr.length; index < len; ++index) {
 		let ata = arr[index].substring(0, arr[index].length - 1);
 		if (sayings.has(ata)){
 			// переделать вывод по образцу
-			a += sayings.get(ata);
+			a += sayings.get(ata) + ' ';
 		} else {
 			// переделать вывод по образцу
-			a += (arr[index]);
+			a += (arr[index]) + ' ';
 			}
 	}
 	document.getElementById('ans').innerHTML = a;
