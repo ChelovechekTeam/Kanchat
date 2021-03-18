@@ -570,7 +570,7 @@ function getData() {
 	if (sayings.has(ata)){
 		document.getElementById('ans').innerHTML = sayings.get(ata);
 	} else{
-		document.getElementById('ans').innerHTML = 'NaxIdi';
+		document.getElementById('ans').innerHTML = 'Sosi_Jopy';
 	}
 }
 
