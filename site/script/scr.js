@@ -572,11 +572,12 @@ for (index = 0, len = arr.length; index < len; ++index) {
 		let ata = arr[index].substring(0, arr[index].length - 1);
 		if (sayings.has(ata)){
 			// переделать вывод по образцу
-			document.getElementById('ans').innerHTML = sayings.get(ata);
+			a += sayings.get(ata);
 		} else {
 			// переделать вывод по образцу
-			document.getElementById('ans').innerHTML = (arr[index]);
+			a += (arr[index]);
 			}
 	}
+	document.getElementById('ans').innerHTML = a;
 }
 
