@@ -3,7 +3,7 @@
 <script>
 window.onload = function () {
   var text = "text";
-  document.body.innerHTML += '<div id="' + text + '">это div c id="' + text + '"</div>';
+  document.body.innerHTML += '<div id="' + text + '">ГЅГІГ® div c id="' + text + '"</div>';
 }
 </script>
 <form>
