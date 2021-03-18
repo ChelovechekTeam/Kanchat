@@ -13,3 +13,18 @@ $(document).ready(function(){
 		$('.font_textarea').toggleClass('active')
 	});
 });
+$(document).ready(function(){
+	$('.btn').blur(function(event) {
+		$('.font_textarea').toggleClass('active')
+	});
+});
+$(document).ready(function(){
+	$('.textarea').blur(function(event) {
+		$('.font_textarea').toggleClass('active')
+	});
+});
+$(document).ready(function(){
+	$('.btn0').blur(function(event) {
+		$('.font_textarea').toggleClass('active')
+	});
+});
