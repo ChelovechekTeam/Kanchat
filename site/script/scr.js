@@ -584,4 +584,4 @@ for (index = 0, len = arr.length; index < len; ++index) {
 	document.getElementById('ans').innerHTML = a;
 		//   izmeneno!!!!!
 }
-
+//gfgfhghfjh
