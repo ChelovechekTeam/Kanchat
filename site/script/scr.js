@@ -571,13 +571,11 @@ function getData() {
 	if (ios == 0){
 	alert('a');
 	ios = 1;
-	document.getElementsByClassName('btn')[1].style= 'background-image: url(../img/arrow.jpg);'
-	//document.getElementById('image').innerHTML=imgs[ios];
+	document.getElementById('lol').innerHTML='<input type="button" id="image" class="btn0" value="" onClick="getData()">'
 } else{
 	ios = 0;
-	document.getElementsByClassName('btn')[1].style= 'background-image: url(../img/arrow1.jpg);'
-	//document.getElementById('image').innerHTML=imgs[ios];
 	alert('b')
+	document.getElementById('lol').innerHTML='<input type="button" id="image" class="btn" value="" onClick="getData()">'
 }
 	let Data = document.forms[0].textField.value;
 	let arr = Data.split(' ');
