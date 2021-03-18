@@ -566,11 +566,17 @@ sayings.set("Юзер", "Юзера");
 
 function getData() {
 	let Data = document.forms[0].textField.value;
-	let ata = Data.substring(0, Data.length - 1);
-	if (sayings.has(ata)){
-		document.getElementById('ans').innerHTML = sayings.get(ata);
-	} else{
-		document.getElementById('ans').innerHTML = 'Sam_Sosi';
+	let arr = Data.split(' ');
+var index, len;
+for (index = 0, len = arr.length; index < len; ++index) {
+		let ata = arr[index].substring(0, arr[index].length - 1);
+		if (sayings.has(ata)){
+			// переделать вывод по образцу
+			document.getElementById('ans').innerHTML = sayings.get(ata);
+		} else {
+			// переделать вывод по образцу
+			document.getElementById('ans').innerHTML = (arr[index]);
+			}
 	}
 }
 
