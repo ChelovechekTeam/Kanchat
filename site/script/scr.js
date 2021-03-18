@@ -567,13 +567,10 @@ sayings.set("Юзер", "Юзера");
 function getData() {
 	let Data = document.forms[0].textField.value;
 	let arr = Data.split(' ');
-var index, len;
-let a = [];
+	var index, len;
+	let a = [];
 for (index = 0, len = arr.length; index < len; ++index) {
 		let ata = arr[index].substring(0, arr[index].length - 1);
-		if sayings.has(arr[index]){
-			a += sayings.get(arr[index]) + ' ';
-		}
 		if (sayings.has(ata)){
 			a += sayings.get(ata) + ' ';
 		} else {
@@ -581,5 +578,6 @@ for (index = 0, len = arr.length; index < len; ++index) {
 			}
 	}
 	document.getElementById('ans').innerHTML = a;
+		//   izmeneno!!!!!
 }
 //gfgf
