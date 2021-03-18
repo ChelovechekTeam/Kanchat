@@ -2,7 +2,13 @@
 	max-height: 400px;
 	overflow:auto;
 	word-wrap: break-word;
+
 }
 .font_textarea{
 	font-family: cursive;
+	color: grey;
 }
+.font_textarea.active{
+	color: black;
+}
+

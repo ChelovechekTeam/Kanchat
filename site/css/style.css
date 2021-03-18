@@ -17,7 +17,7 @@ html, body{
 }
 .container{
 	width: 90%;
-	background-color: rgba(255,255,255,0.4);
+	background-color: rgba(255,255,255,0.7);
 	margin: 0 auto;
 	
 }
@@ -61,7 +61,7 @@ html, body{
 	height: 400px;
 	border: none;
 	font-size: 30px;
-	background-color: rgba(255,255,255,0.0);
+	background-color: rgba(255,255,255,1);
 	border-right: 2px solid grey;
 	border-bottom: 2px solid grey;
 }
@@ -86,7 +86,7 @@ html, body{
 	width: 100%;
 	min-height: 400px;
 	padding: 1% 1% 1% 1%;
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,1);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -106,24 +106,22 @@ html, body{
 		
 	}
 	.btn{
-		
+		border:none;
 		background-image: url(../img/arrow.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position:center;
-		border: none;
 		min-width:100%;
 		min-height:40px;
 		height: 100%;
 		outline: none;
 	}
 		.btn0{
-		
+		border:none;
 		background-image: url(../img/arrow1.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position:center;
-		border: none;
 		min-width:100%;
 		min-height:40px;
 		height: 100%;
@@ -147,7 +145,7 @@ html, body{
 @media screen and (max-width : 415px) and (max-device-height: 824px) {
 	.container{
 		width: 100%;
-		background-color: rgba(255,255,255,0.7);
+		background-color: rgba(255,255,255,0.0);
 	}
 	.blocks{
 		flex-direction: column;
